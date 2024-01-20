@@ -9,6 +9,7 @@ import RegisterScreen from './src/screens/RegisterScreen';
 import TabNavigators from './src/navigators/TabNavigators';
 import DetailsScreen from './src/screens/DetailsScreen';
 import CartScreen from './src/screens/CartScreen';
+import Toast from 'react-native-toast-message';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +50,7 @@ function App() {
           options={{animation: 'slide_from_right'}}
         />
       </Stack.Navigator>
+      <Toast />
     </NavigationContainer>
   );
 }
